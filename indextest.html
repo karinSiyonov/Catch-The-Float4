@@ -1,0 +1,70 @@
+﻿<!doctype html>
+<html lang="he">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Catch The Float</title>
+    <meta name="description" content="name of game" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="names" />
+
+    <!-- CSS -->
+
+    <link href="styles/myStyle.css" rel="stylesheet" />
+
+    x
+    <!--jQuery library-->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+    <!--הקוד שמפעיל את תפריט הניווט-->
+    <script src="jScripts/myScript.js"></script>
+
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <!--קישור לדף עצמו כדי להתחיל את המשחק מחדש בלחיצה על הלוגו-->
+            <a href="indextest.html">
+                <img id="logo" src="pictures/LOGO.png"/> <!--הלוגו של המשחק שלכם-->
+                <p>Catch The Float</p>
+            </a>
+            <!--תפריט הניווט בראש העמוד-->
+            <nav>
+                <ul>
+                    <li><a class="about">אודות</a></li>
+                    <li><a class="howToPlay">איך משחקים?</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="aboutDiv" class="popUp bounceInDown hide">
+            <a class="closeAbout">X</a>
+            <p>
+                אפיון ופיתוח: עדן זלצמן, שלי גורליק וקארין סיונוב
+
+                :אופיין ופותח במסגרת פרויקט בקורסים
+                סביבות לימוד אינטראקטיביות ותכנות אינטראקציה ואנימציה, תשפ"ג
+            </p>
+			
+			
+        </div>
+        <div style="position:"display:flex;" id="howToPlayDiv" class="popUp bounceInDown hide">
+            <a style="align-self:self-start; justify-self:self-start" class="closeHowToPlay">X</a>
+            <p>
+                אל מסלולי השחייה יגיעו מצופים ועליהם תשובות שונות
+                ?אז מה צריך לעשות
+                לזהות את המצוף עם התשובה המתאימה לפי הקטגוריה בראש העמוד
+
+                לכוון את השחיין/ית אל המסלול שחיה ממנו המצוף מגיע בעזרת החצים במקלדת (חץ למעלה - יקח אותנו למסלול אחד למעלה, חץ למטה- יקח אותנו למסלול אחד למטה)
+                !אם המצוף לא מתאים? מתחמקים
+            </p>
+        </div>
+
+        <div id="gameArea" class="">
+            <!--src = הקישור של דף המשחק שלכם -->
+           <iframe src="https://i.simmer.io/@karinTEstttt/catch-the-float" style="width:100%;height:100%"></iframe>
+        </div>
+    </div>
+</body>
+
+</html>
